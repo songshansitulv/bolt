@@ -51,4 +51,5 @@ cache:
   directories:
     - $HOME/.composer/cache/files
 
-dist: trusty
+after_success:
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)dist: trusty
